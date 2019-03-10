@@ -19,16 +19,20 @@ void Switch_array(char *str1,char *str2)
 		str2[i] = temp;
 	}
 }
-//The above function switches two strings.
-
+/*
+The above function switches two strings.
+You can enter a string into an array,
+but you receive a string in a different way for pointer practice.
+*/
 int main()
 {
 	char str[100];
-	char compare[5][20] = { 0, }; //Initialize Array
+	char compare[5][20] = { 0, };//Initialize Array
 	char *ptr;
 	int i, j, count;
 	printf("Enter 5 strings separated by spacing. : ");
 	gets(str);
+	//This code can be entered in both upper and lower case characters.
 	ptr = str; 
 	count = 0;
 	i = 0;
@@ -60,35 +64,47 @@ int main()
 	{
 		for (j = i + 1; j < 5; j++)
 		{
-			if (strlen(compare[i]) > strlen(compare[j]))
+			char temp_i, temp_j;
+			temp_i = compare[i][0];
+			temp_j = compare[j][0];
+			if (temp_i >= 65 && temp_i <= 90)
 			{
-				Switch_array(compare[i],compare[j]);
+				temp_i += 32;
+			}
+			if (temp_j >= 65 && temp_j <= 90)
+			{
+				temp_j += 32;
+			}
+			if (temp_i > temp_j)
+			{
+				Switch_array(compare[i], compare[j]);
 				j = i;
 			}
 		}
 	}
-
-	printf("Output in length order. (Results of the sort).\n");
+	printf("Output in dictionary order.\n");
 	for (i = 0; i < 5; i++)
 	{
 		printf("%s\n", compare[i]);
 	}
 	return 0;
 }
-//----------reulst----------
-//Enter 5 strings separated by spacing. : eeeee a dddd ccc bb
-//--------------------
-//eeeee
-//a
-//dddd
-//ccc
-//bb
-//--------------------
-//Output in length order. (Results of the sort).
-//a
-//bb
-//ccc
-//dddd
-//eeeee
-//--------------------------
-//The above values ​​are different every time.
+/*
+----------reulst----------
+Enter 5 strings separated by spacing. : English apple korea Zeta Man
+--------------------
+English
+apple
+korea
+Zeta
+Man
+--------------------
+Output in dictionary order.
+apple
+English
+korea
+Man
+Zeta
+--------------------------
+The above values ​​are different every time.
+*/
