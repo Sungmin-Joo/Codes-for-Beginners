@@ -22,7 +22,8 @@ int main()
 			printf("%d ", Result_mult[i][j]);
 		}
 		printf("\n");
-	}	
+	}
+	return 0;	
 }
 /*
 ---------- result ----------

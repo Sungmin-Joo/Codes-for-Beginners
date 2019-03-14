@@ -5,6 +5,7 @@ int main()
 	char *A = "Hello";
 	printf("%p\n", A);
 	printf("%s\n", A);
+	return 0;
 }
 //----------reulst----------
 //00A56B30
