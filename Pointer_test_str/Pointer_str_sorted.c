@@ -33,7 +33,7 @@ int main()
 	count = 0;
 	i = 0;
 	//Outputs the entered string with a pointer
-	printf("\n--------------------\n", *ptr);
+	printf("\n--------------------\n");
 	while (1)
 	{
 		if (*ptr == ' ') //Outputs an opening character when the current pointer indicates a space in the charactor.
@@ -44,7 +44,7 @@ int main()
 		}
 		else if (*ptr == NULL)//Breaks the while statement when the current pointer points to NULL.
 		{
-			printf("\n--------------------\n", *ptr);
+			printf("\n--------------------\n");
 			break;
 		}
 		else
@@ -68,7 +68,7 @@ int main()
 		}
 	}
 
-	printf("Output in length order. (Results of the sort).\n");
+	printf("Output in length order. (Results of the sort)\n");
 	for (i = 0; i < 5; i++)
 	{
 		printf("%s\n", compare[i]);
