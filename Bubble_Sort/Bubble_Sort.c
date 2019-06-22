@@ -6,6 +6,7 @@ int main()
 {
 	int i, A[100], temp, index = (sizeof(A)/sizeof(int));
 	srand(time(NULL)); i = rand();
+
 	/*
 	Use srand to initialize seed.
 	"i = rand()" is not an essential code.
@@ -13,6 +14,7 @@ int main()
 	Since the time (NULL) is used for "srand," the first "rand" value seems to be similar for each consecutive compilation.
 	At least that's what I think.
 	*/
+
 	for (i = 0; i < 100; i++)
 	{
 		A[i] = rand();
