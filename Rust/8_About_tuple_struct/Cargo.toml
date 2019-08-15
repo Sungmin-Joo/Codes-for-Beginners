@@ -1,0 +1,7 @@
+[package]
+name = "8_About_tuple_struct"
+version = "0.1.0"
+authors = ["joo"]
+edition = "2018"
+
+[dependencies]
