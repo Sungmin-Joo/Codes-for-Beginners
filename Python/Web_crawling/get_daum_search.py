@@ -1,6 +1,5 @@
 ﻿from bs4 import BeautifulSoup
 import requests
-import re
 
 url = 'https://www.daum.net/'
 response =  requests.get(url = url, verify=False)
