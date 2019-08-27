@@ -36,7 +36,8 @@ void main() {
 	ptr_str[2] = "JoJo";
 	/*
 	문자열들이 읽기 전용 메모리로 저장되기때문에 수정이 불가능하다.
-	init(const)영역에 문자열이 있는데, init(const)영역과 rodata영역은 읽기만 가능한(READ ONLY) 메모리 영역이다.
+	rodata영역에 문자열이 있는데, init(const)영역과 rodata영역은 읽기만 가능한(READ ONLY) 메모리 영역이다.
+	init과 rodata의 차이는 추후 따로 정리할 예정이다.
 	포인터만 데이터 영역에 포함된다.
 	*/
 	for (i = 0; i < 3; i++)
