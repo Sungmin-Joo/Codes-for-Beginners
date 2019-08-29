@@ -1,7 +1,7 @@
 # Go 언어 독학하기
 
 ## o 개발 환경  
-Go - gp1.12.9 windows/amd64
+Go - g1.12.9 windows/amd64
 
 Editor - VS code  
 
