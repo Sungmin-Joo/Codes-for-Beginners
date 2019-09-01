@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import time
 import os
 import multiprocessing
@@ -35,14 +35,22 @@ if __name__ == '__main__' :
 
 '''
 ---------- result ----------
-p1
-p2
-p3
-p4
-sequence programming : 8.00560398101807 sec
-p1
-p2
-p3
-p4
-parallel programming : 2.3133899250030518 sec
+프로세스 id :  7784
+process_list :  p1
+프로세스 id :  7784
+process_list :  p2
+프로세스 id :  7784
+process_list :  p3
+프로세스 id :  7784
+process_list :  p4
+sequence programming : 8.006831645965576 sec
+프로세스 id :  8692
+process_list :  p1
+프로세스 id :  7412
+process_list :  p2
+프로세스 id :  16240
+process_list :  p3
+프로세스 id :  12216
+process_list :  p4
+parallel programming : 2.1641221046447754 sec
 '''
