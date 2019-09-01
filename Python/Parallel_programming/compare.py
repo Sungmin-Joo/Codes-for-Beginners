@@ -1,54 +1,55 @@
 # -*- coding: utf-8 -*-
 import time
+import os
 import multiprocessing
-
+semaphore = 0
 def func(x):
-    result = 0
-    for i in x:
-        result += i
-    return result
-    
+    global semaphore
+    while semaphore:
+        pass
+    semaphore = 1
+    print("프로세스 id : ", os.getpid())
+    print("process_list : ",x)
+    semaphore = 0
+    time.sleep(2)
+    return
 
 if __name__ == '__main__' :
-    
-    
     start = time.time()
-    p1 = [i for i in range(50000)]
-    p2 = [i for i in range(50000,100000)]
-    p3 = [i for i in range(100000,150000)]
-    p4 = [i for i in range(150000,200000)]
-    
-    process_list = [p1,p2,p3,p4]
-    answer = 1
+    process_list = ['p1','p2','p3','p4']
+
     for _ in process_list:
-        answer *= func(_)
+        func(_)
     end = time.time()
-    
+
     print('sequence programming : %s sec' %(end - start))
-    print('answer : %d' %(answer))
-    
+
     start = time.time()
-    answer=0
+
     p = multiprocessing.Pool(processes=4)
-    answer = p.map(func,process_list)
+    p.map(func,process_list)
     p.close()
     p.join()
-    temp = 1
-    for i in answer:
-        temp*= i 
+
     print('parallel programming : %s sec' %(time.time() - start))
-    print('answer : %d' %(temp))
-    
+
 '''
----------- result ----------
-p1
-p2
-p3
-p4
-sequence programming : 8.00560398101807 sec
-p1
-p2
-p3
-p4
-parallel programming : 2.4593899250030518 sec
+프로세스 id :  7784
+process_list :  p1
+프로세스 id :  7784
+process_list :  p2
+프로세스 id :  7784
+process_list :  p3
+프로세스 id :  7784
+process_list :  p4
+sequence programming : 8.006831645965576 sec
+프로세스 id :  8692
+process_list :  p1
+프로세스 id :  7412
+process_list :  p2
+프로세스 id :  16240
+process_list :  p3
+프로세스 id :  12216
+process_list :  p4
+parallel programming : 2.1641221046447754 sec
 '''
