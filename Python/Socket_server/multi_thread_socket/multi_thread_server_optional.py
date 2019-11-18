@@ -37,7 +37,7 @@ def accept_func():
             print("Keyboard interrupt")
 
         print("클라이언트 핸들러 스레드로 이동 됩니다.")
-
+        #accept()함수로 입력만 받아주고 이후 알고리즘은 핸들러에게 맡긴다.
         t = threading.Thread(target=handle_client, args=(client_socket, addr))
         t.daemon = True
         t.start()
@@ -56,7 +56,3 @@ if __name__ == '__main__':
     except:
         pass
     accept_func()
-
-
-
-
