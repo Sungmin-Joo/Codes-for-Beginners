@@ -9,5 +9,5 @@ C, C++, Python, Rust, Go, Java//201903~
 
  Name      : 주성민(Joo Sung Min)  
  E-mail    : big-joo_dev@naver.com  
- Phone     : 010-2770-4367
- Univesity : Korea Polytechnic University
+ Phone     : 010-2770-4367  
+ Univesity : Korea Polytechnic University  
