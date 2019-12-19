@@ -51,7 +51,7 @@ public class Main {
         System.out.println("num is variable -> " + num);
 
         //상수
-        int s_num = 10;
+        final int s_num = 10;
         System.out.println("s_num is constants -> " + s_num);
         System.out.println("-------------------------------");
     }
