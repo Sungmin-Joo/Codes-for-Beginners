@@ -43,3 +43,28 @@ print(emtyDict)
 emtyDict = [:]
 print(emtyDict)
 //result : [:]
+
+//딕셔너리 문법
+var dictVal = [String: Int]()
+dictVal["조승아"] = 1
+dictVal["주성민"] = 2
+print(dictVal.count)
+//result : 2
+
+if dictVal.isEmpty {
+    print("dictVal is Empty")
+} else {
+    for (key, val) in dictVal {
+        print(key, val)
+    }
+}
+/*
+ result :
+ 조승아 1
+ 주성민 2
+ */
+
+//키 값에 해당하는 값의 존재가 확실하지 않을때 쓰는 문법 - 옵셔널 적용
+let haveVar: Int? = dictVal["전준범"]
+print(haveVar)
+//"전준범"에 해당하는 값이 없기 떄문에 nil값이 들어간다. 반대로 생각하면 특정 키에 해당하는 값의 쌍을 지우려면 nil을 대입하면 된다.
