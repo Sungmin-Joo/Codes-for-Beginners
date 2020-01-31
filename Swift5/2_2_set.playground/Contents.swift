@@ -1,5 +1,5 @@
 import UIKit
-
+//****set의 element는 hashable type이여야 한다. -> 기본적인 type(String, Int, Double, Bool)은 hasable 이다.
 //간단한 set 자료형(구조체) 사용 법
 //값을 수정하기 위해 let 대신 var로 선언
 func checkFunc(input: Set<String>) {
