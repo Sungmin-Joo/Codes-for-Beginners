@@ -21,6 +21,12 @@ for name in nameList{
  노준호 은 그냥 이름입니다.
  */
 
+//for 문에 where절을 추가하여 추가적인 조건을 확인할 수 있게 하는 방법
+for i in 0..<100 where (i % 4) == 0 {
+    print("\(i) is muliple of 4")
+}
+// 결과는 생략..
+
 //조건문에 boolean이 와야하기 때문에 퀘스천 마크(?)를 사용한 특이한 문법도 있다.
 let isString: String? = "I'm Not nil"
 if let str = isString{
