@@ -61,3 +61,19 @@ print("code : \(code), text : \(text)")
 let (status,_) = codeNtext
 print("Just use code : \(status)")
 //result : Just use code : 404
+
+//특이한 String선언 방법
+var newString = #"I say "HI! Joo!!!"\#nAnd I cry"#
+print(newString)
+/*
+ result :
+ I say "HI! Joo!!!"
+ And I cry
+*/
+
+newString = ""
+if newString.isEmpty {
+    print("empty string")
+}
+//result : empty string
+//주의할 점 -> 빈 문자열은 nil과 같지 않다.
