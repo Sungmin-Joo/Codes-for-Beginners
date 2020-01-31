@@ -16,7 +16,7 @@ var var2: Int = 20
 print(var1, var2)
 //result : 10 20
 
-//변수나 상수를 선언할 때 충분한 정보를 포함하지 않으면 자료형을 명시해준다.
+//변수나 상수를 선언할 때 충분한 정보를 포함하지 않으면 자료형을 명시해준다. + 자료형을 추론이 아닌 명시할 경우 컴파일 시간이 단축
 let const1 = 10.1
 let const2: Float = 10.1
 
@@ -43,4 +43,21 @@ count = 20
 print(numString)
 //result : count is 30, wow!
 
+//Type Conversion
+let intVar: Int = 3
+let doubleVar: Double = 3.14
+//let sum = intVar + doubleVar
+let sum = intVar + Int(doubleVar)
+print(sum)
+//result : 6
+//Type casting 이 아니라 새로운 Int 자료형 데이터를 생성한 후 덧샘을 수행한다.
 
+//Tuple
+let codeNtext = (404, "Not Found")
+let (code, text) = codeNtext
+
+print("code : \(code), text : \(text)")
+//result : code : 404, text : Not Found
+let (status,_) = codeNtext
+print("Just use code : \(status)")
+//result : Just use code : 404
