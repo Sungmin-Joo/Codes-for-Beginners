@@ -47,3 +47,11 @@ print(result.0)
  5
  5
  */
+
+//반환값이 없는 함수 형태
+func noReturn(a: Int) -> Void {
+    print("recieve \(a)")
+}
+
+noReturn(a: 33)
+//recieve 33
