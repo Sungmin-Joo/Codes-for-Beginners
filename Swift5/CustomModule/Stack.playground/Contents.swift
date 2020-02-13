@@ -70,6 +70,19 @@ extension Stack: Findable {
     }
 }
 
+//스택에서 원소를 빼서 주는 이터레이터
+
+extension Stack: IteratorProtocol {
+    mutating func next() -> Element? {
+        return self.pop()
+    }
+}
+
+extension Stack: Sequence {
+    func makeIterator() -> Stack<Element> {
+        return self
+    }
+}
 
 
 //test code
@@ -77,10 +90,31 @@ var array = [Int]()
 var stack = Stack(items: array)
 let testElements = [6, 2, 3, 1, 4]
 
+//---- IteratorProtocol conform test ----
 for element in testElements {
     stack.push(element)
 }
 
+var index = testElements.count - 1
+while let element = stack.next() {
+    let compareData = testElements[index]
+    defer { index -= 1 }
+    assert(element == compareData)
+}
+
+//---- Sequence conform test ----
+for element in testElements {
+    stack.push(element)
+}
+
+index = testElements.count - 1
+for element in stack {
+    let compareData = testElements[index]
+    defer { index -= 1 }
+    assert(element == compareData)
+}
+
+//---- method test ----
 assert(stack.isEmty == false)
 assert(stack.volume == testElements.count)
 assert(stack.top == testElements.last)
