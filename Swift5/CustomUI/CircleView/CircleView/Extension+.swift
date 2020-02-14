@@ -1,6 +1,6 @@
 //
 //  Extention+.swift
-//  CircleClass
+//  CircleView
 //
 //  Created by Naver on 2020/02/14.
 //  Copyright © 2020 Naver. All rights reserved.
@@ -42,5 +42,15 @@ extension UIView: isCircle {
 
     func borderUIColor(color: UIColor) {
         layer.borderColor = color.cgColor
+    }
+
+    func borderAndUIColor(borderWith: CGFloat, color: UIColor) {
+        layer.borderWidth = borderWith
+        layer.borderColor = color.cgColor
+    }
+
+    func borderAndCGColor(borderWith: CGFloat, color: CGColor) {
+        layer.borderWidth = borderWith
+        layer.borderColor = color
     }
 }

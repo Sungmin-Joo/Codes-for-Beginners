@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CircleClass
+//  CircleView
 //
 //  Created by Naver on 2020/02/14.
 //  Copyright © 2020 Naver. All rights reserved.
@@ -15,9 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 
         circleView.backgroundColor = .darkGray
-        circleView.layer.borderWidth = 3
-        circleView.borderUIColor(color: .red)
-
+        circleView.borderAndUIColor(borderWith: 3, color: .red)
         self.view.addSubview(circleView)
 
         let button = UIButton(frame: CGRect(center: self.view.center, size: CGSize(width: 150, height: 30)))
