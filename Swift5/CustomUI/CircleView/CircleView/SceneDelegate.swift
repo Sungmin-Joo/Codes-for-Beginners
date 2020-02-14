@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  ClassView
+//  CircleView
 //
 //  Created by Naver on 2020/02/14.
 //  Copyright © 2020 Naver. All rights reserved.
