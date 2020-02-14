@@ -13,7 +13,7 @@
 		4A3666EC23F6D4E100FE4E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3666EA23F6D4E100FE4E87 /* Main.storyboard */; };
 		4A3666EE23F6D4E300FE4E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3666ED23F6D4E300FE4E87 /* Assets.xcassets */; };
 		4A3666F123F6D4E300FE4E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3666EF23F6D4E300FE4E87 /* LaunchScreen.storyboard */; };
-		4A3666F923F6D51000FE4E87 /* Extension+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3666F823F6D51000FE4E87 /* Extension+.swift */; };
+		4A36671B23F6DDB200FE4E87 /* Extension+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A36671A23F6DDB200FE4E87 /* Extension+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		4A3666ED23F6D4E300FE4E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A3666F023F6D4E300FE4E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A3666F223F6D4E300FE4E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A3666F823F6D51000FE4E87 /* Extension+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension+.swift"; path = "../../ClassView/ClassView/Extension+.swift"; sourceTree = "<group>"; };
+		4A36671A23F6DDB200FE4E87 /* Extension+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 				4A3666EA23F6D4E100FE4E87 /* Main.storyboard */,
 				4A3666ED23F6D4E300FE4E87 /* Assets.xcassets */,
 				4A3666EF23F6D4E300FE4E87 /* LaunchScreen.storyboard */,
-				4A3666F823F6D51000FE4E87 /* Extension+.swift */,
 				4A3666F223F6D4E300FE4E87 /* Info.plist */,
+				4A36671A23F6DDB200FE4E87 /* Extension+.swift */,
 			);
 			path = CircleView;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 				4A3666E923F6D4E100FE4E87 /* ViewController.swift in Sources */,
 				4A3666E523F6D4E100FE4E87 /* AppDelegate.swift in Sources */,
 				4A3666E723F6D4E100FE4E87 /* SceneDelegate.swift in Sources */,
-				4A3666F923F6D51000FE4E87 /* Extension+.swift in Sources */,
+				4A36671B23F6DDB200FE4E87 /* Extension+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
