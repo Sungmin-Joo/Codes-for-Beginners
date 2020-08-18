@@ -24,7 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: osascript sendMessage.applescript "+82 10-2770-4367" "Hello there" 
+      run: curl www.naver.com
 
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
